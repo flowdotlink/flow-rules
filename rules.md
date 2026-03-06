@@ -84,7 +84,7 @@ Agent Roles are non-exclusive. Each Partner may serve as an Initiating Agent, Re
 
 **Rule 108\. Notice and Communications**
 
-As referenced throughout these Rules, notices and communications are in writing via email, and where Partners are required to (or elect to) submit documents or information to Notabene, they must do so via email. Notabene’s email is [flow@notabene.id](mailto:flow@notabene.id), and each Partner’s email is that which it recorded in the System or otherwise provided to Notabene (for example, in the contracting process). 
+As referenced throughout these Rules, notices, reports, and other communications are in writing via email, and where Partners are required to (or elect to) submit documents or information to Notabene, they must do so via email. Notabene’s email is [flow@notabene.id](mailto:flow@notabene.id), and each Partner’s email is that which it recorded in the System or otherwise provided to Notabene (for example, in the contracting process). 
 
 **PART 2 – UPDATING THE RULES**
 
@@ -239,7 +239,7 @@ All Partner communications conducted through or relating to the Network must be 
 
 For a transaction with N participating Partners (excluding the Initiating Agent), the distribution is calculated as follows:
 
-1\. Notabene Share: percentage of total Transaction Fees as stated in \_\_\_\_
+1\. The percentage of total Transaction Fees is stated in Notabene Flow.
 
 2\. Optional: In the absence of a smart contract, there is a Fee Custodian Share: 5% of total Transaction Fee.
 
@@ -263,11 +263,13 @@ Any revisions to this Part 4 take effect consistent with Rule 200, except that c
 
 **Rule 404\. Other Obligations**
 
-1\. Partners must pay Transaction Fees regardless of any separate bilateral obligations that may exist between any two Partners.
+1\. Partners must pay Transaction Fees in full regardless of any separate bilateral obligations that may exist between any two Partners.
 
 2\. Partners may have a separate obligation to pay fees to Notabene for use of Notabene Flow (Use Fees), which are separate and independent from Transaction Fees. 
 
 3\. Partners are fully responsible to pay any “gas fees” that may be due for processing transactions on any blockchain.
+
+4\. Partners are fully responsible to pay any other fees that they incur as a part of a transaction independent of Notabene Flow (e.g. blockchain analytics, fiat rail transfer fees, etc).
 
 **PART 5 – MULTI-LATERAL LIABILITY FRAMEWORK**
 
