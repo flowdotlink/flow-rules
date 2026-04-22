@@ -1,4 +1,4 @@
-**NOTABENE FLOW RULES**
+ **NOTABENE FLOW RULES**
 
 **PART 1 – OVERVIEW**
 
@@ -34,9 +34,9 @@ The **originator** is the End User sending funds (payor), and the **beneficiary*
 
 An “**Agent**” is any Partner entity that participates in Notabene Flow. Partners serve in one or more of the following “**Agent Roles**”:
 
-1) Initiating Agent: Initiates transactions on behalf of End Users that are payment originators (payors) for payouts/push payments or beneficiaries (payees) for pay-ins/pull payments.  
+1) Initiating Agent: Initiates transactions on behalf of End Users that are payment originators for payouts/ or beneficiaries for pay-ins.  
      
-2) Responding Agent: Responds to transaction requests on behalf of End Users that are payment originators (payors) for pay-ins or beneficiaries (payees) for payouts.   
+2) Responding Agent: Responds to transaction requests on behalf of End Users that are payment originators for pay-ins or beneficiaries for payouts.   
      
 3) Infrastructure Provider: Provides technical services to other Agents and does not hold direct End User relationships. Services provided include, but are not limited to: 
 
@@ -62,15 +62,15 @@ Agent Roles are non-exclusive. Each Partner may serve as an Initiating Agent, Re
 2) Create and manage payment requests with complete transaction details;  
 3) Provide settlement assets or settlement addresses for payouts;  
 4) Own the primary business relationship with its End Users; and  
-5) Perform current KYC/AML and sanctions compliance on its End Users in accordance with Applicable Law.
+5) Perform customer due diligence (CDD)  for Anti-Money Laundering (AML) purposes and ensure sanctions compliance on its End Users in accordance with Applicable Law.
 
 2\. Responding Agents must:
 
 1) Obtain proper End User authorization for all transactions;  
-2) Select settlement methods from those supported an the Initiating Agent;  
+2) Select settlement methods from those supported by the Initiating Agent;  
 3) Provide settlement assets or settlement addresses for pay-ins;   
 4) Own the primary business relationship with its End Users;  
-5) Perform current KYC/AML and sanctions compliance on its End Users in accordance with Applicable Law.
+5) Perform customer due diligence (CDD) for Anti-Money Laundering purposes (AML) ensure and sanctions compliance on its End Users in accordance with Applicable Law.
 
    
 
@@ -80,7 +80,7 @@ Agent Roles are non-exclusive. Each Partner may serve as an Initiating Agent, Re
 2) Maintain institutional-grade security and audit capabilities;   
 3) Meet the security and performance standards specified in the Documentation and these Rules; and  
 4) Not maintain direct relationships with End Users; and  
-5) Manages and fulfills its internal compliance obligations.
+5) Manage and fulfill its internal compliance obligations.
 
 **Rule 108\. Notice and Communications**
 
@@ -134,7 +134,7 @@ To access Notabene Flow, each prospective Partner must satisfy the minimum eligi
 
 As such, the minimum documentation that each prospective Partner must submit upon onboarding, and subsequently on an annual basis, are: 
 
-1) legal entity information and LEI (if applicable);   
+1) legal entity information and LEI ;   
 2) regulatory licenses;   
 3) relevant security certifications (including SOC 2 and/or ISO 27001); and   
 4) certificates of insurance. 
@@ -156,7 +156,7 @@ A **“Security Incident**” is a breach of security leading to accidental or u
 1\. Partners must: 
 
 1) Comply with the Documentation pertaining to jurisdiction-specific Travel Rule requirements at [https://intercom-help.eu/helpnotabene/en/collections/714921-jurisdictional-requirements](https://intercom-help.eu/helpnotabene/en/collections/714921-jurisdictional-requirements)  
-2) Validate Notabene Flow's implementation as applicable to Partners' regulatory obligations  
+2) Validate that Notabene Flow correctly implements of Travel Rule requirements in line with the Partners' regulatory obligations and promptly notify Notabene of any discrepancies or disagreements  
 3) Proactively notify Notabene and request the addition of any jurisdiction relevant to their operations not currently supported  
 4) Promptly notify Notabene of legal or regulatory changes requiring system-level modifications  
 5) Promptly forward Travel Rule messages to other entities within their corporate group if the legal entity was incorrectly identified by the originator.
@@ -170,13 +170,13 @@ A **“Security Incident**” is a breach of security leading to accidental or u
 
 3\. Partners must respond to Travel Rule messages within timeframes required by applicable regulations or, if not specified, within 24 hours.
 
-4\. Incomplete, inaccurate, or dummy data constitutes breach of obligations to Partners who rely on such data for regulatory compliance. 
+4\. Inaccurate, or dummy data or incomplete data according to the Partner's own jurisdiction,  constitutes breach of obligations to Partners who rely on such data for regulatory compliance. 
 
 5\. Partners receiving incomplete data may reject transactions or request clarification.
 
 **Rule 305\. Mandatory Rejection of Transactions**
 
-Partners must refuse transactions involving (a) sanctioned persons or jurisdictions, and (b) non- compliance with FATF Travel Rule requirements and implementing regulations in applicable jurisdictions.
+Partners must refuse transactions involving (a) sanctioned persons or jurisdictions, and (b) non- compliance with FATF Travel Rule requirements implementing regulations in applicable jurisdictions.
 
 **Rule 306\. Continuing Obligations.**
 
@@ -191,13 +191,13 @@ Partners must continuously:
 
 1\. Partners must integrate with and maintain technical compatibility with Notabene Flow and must complete end-to-end integration tests per the Documentation. 
 
-2\. All transactions in Notabene Flow follow authorization-before-settlement principles. No settlement address may be disclosed or settlement executed until all required authorizations are obtained through TAP.
+2\. All transactions in Notabene Flow follow authorization-before-settlement principles. 
 
 3\. All Partners must use TAP for authorization messaging. Each Partner controls its unique identifier for Network use.
 
 **Rule 308\. Settlement Assets and Addresses**
 
-1\. For payouts, Responding Agents must select settlement assets from the Initiating Agent's supported asset list. For pay-ins, Initiating Agents must select settlement assets from the Responding Agent's supported asset list. Settlement addresses must be provided only after complete authorization. 
+1\. For pay-ins, Responding Agents must select settlement assets from the Initiating Agent's supported asset list. For payouts, Initiating Agents must select settlement assets from the Responding Agent's supported asset list. Settlement addresses must be provided only after complete authorization. 
 
 2\. Partners must use standardized identifier formats specified in Documentation for blockchain assets, blockchain account addresses, blockchain networks, and fiat payment accounts. Partners may only share settlement addresses controlled by their organization. Partners must not provide false ownership attestations or addresses they do not control. 
 
@@ -374,8 +374,9 @@ Fraudulent activity is expected to be recorded for every Partner.
 
 (a) Settlement receipt confirmation: \< 2 minutes for 95% of transactions  
 (b) Payment link validity: \> 98% maintained for minimum validity periods  
-(c) Travel Rule response: \> 95% answered within 24 hours  
-(d) Transaction failure rate: \< 1% over rolling 30-day period
+(c) Travel Rule data completeness: \> 95% with complete IVMS-101 data  
+(d) Travel Rule response: \> 95% answered within 24 hours  
+(e) Transaction failure rate: \< 1% over rolling 30-day period
 
 **Rule 603\. KPIs for Responding Agents Only**
 
@@ -424,7 +425,7 @@ Notabene’s intent is to monitor the KPIs in Part 6 on a continuous basis for e
 
 2\. Manual monitoring: 
 
-Partners must confirm their satisfaction of Eligibility Criteria once annually and, accordingly, will submit updated documentation (as provided in Rule 301\) on each anniversary of the effective date of their Agreement. If Notabene does not receive such documentation (to Notabene’s satisfaction, in its reasonable judgment) within thirty (30) days of this anniversary, Notabene will notify the Partner that this submission is overdue (“**Overdue Notice**”). 
+Partners must confirm their satisfaction of Eligibility Criteria at least once annually and, accordingly, will be required to re-submit updated documentation (as provided in Rule 301\) on an annual basis. If Notabene does not receive such documentation (to Notabene’s satisfaction, in its reasonable judgment) within thirty (30) days of the due date, Notabene will notify the Partner that this submission is overdue (“**Overdue Notice**”). 
 
 3\. Peer reporting or Notabene’s independent identification: 
 
@@ -461,7 +462,7 @@ Note: Peer reports made in bad faith or with reckless disregard for the truth ma
 1\. A “warning” status (yellow) will be triggered if:
 
 1) Transaction Fees for any transaction are up to seven (7) days past due,  
-2) Any one KPI is exceeded for two consecutive months,   
+2) Any one KPI is not met for two consecutive months,   
 3) A Partner does not respond for thirty (30) days to an Overdue Notice, or   
 4) Notabene receives a peer report, or independently identifies, a Potential Non-Eligibility. 
 
